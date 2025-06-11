@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Свадьба Натали и Андрея</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: url('bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Playfair Display', serif;
+    }
+    .fade-in {
+      animation: fadeIn 2s ease-out forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="text-white bg-black bg-opacity-50">
+
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-4 fade-in">
+    <h1 class="text-5xl md:text-6xl font-bold mb-4">Натали & Андрей</h1>
+    <p class="text-xl md:text-2xl">Мы приглашаем вас на наше свадебное торжество</p>
+    <p class="mt-2 text-lg">20 июля 2025 года</p>
+  </section>
+
+  <section class="bg-white bg-opacity-90 text-black py-12 fade-in">
+    <h2 class="text-3xl font-bold text-center mb-6">Вы придёте?</h2>
+    <form action="https://formsubmit.co/prostocool18@gmail.com" method="POST" class="max-w-lg mx-auto px-6 space-y-4">
+      <input type="hidden" name="_subject" value="Ответ на приглашение">
+      <input type="text" name="Имя" placeholder="Ваше имя" required class="w-full p-3 border border-gray-300 rounded">
+      <select name="Буду ли на свадьбе" class="w-full p-3 border border-gray-300 rounded">
+        <option value="Да, приду">Да, приду!</option>
+        <option value="Нет, не смогу">Увы, не смогу</option>
+      </select>
+      <button type="submit" class="w-full bg-pink-600 text-white py-3 rounded hover:bg-pink-700 transition">Отправить</button>
+    </form>
+  </section>
+
+  <footer class="bg-black bg-opacity-70 text-center py-6 text-white text-sm fade-in">
+    С любовью, Натали и Андрей ❤️
+  </footer>
+
+</body>
+</html>
